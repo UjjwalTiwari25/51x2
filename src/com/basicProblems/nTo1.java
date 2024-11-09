@@ -1,18 +1,19 @@
 package com.basicProblems;
 
-public class nTo1 {
-    public static void main(String[] args) {
-        func(5);     //not sout because we are not returning any value
-    }
-    static void func(int n){//void because there is no return type
-        if (n == 0) {
-            return;
-        }
-        System.out.println(n);
-        func(n-1);
-        }
-
-}
+//public class nTo1 {
+//    public static void main(String[] args) {
+//        func(5);     //not sout because we are not returning any value
+//    }
+//    static void func(int n){//void because there is no return type
+//        if (n == 0) {
+//            return;
+//        }
+//
+//        System.out.println(n);
+//        func(n-1);
+//        }
+//
+//}
 /*
 Bilkul sahi soch rahe ho! Yeh confusion common hai, aur mein explain karta hoon. Yahan pe tumne System.out.println(n); likha hai function ke andar, jo directly screen pe output print kar raha hai. Iska matlab hai ki function n ko print kar raha hai, par koi value "return" nahi kar raha.
 
@@ -26,3 +27,18 @@ Return Type void: void ka matlab hota hai "no return value." Jab tum static void
 In summary, func(5); function kuch bhi return nahi kar raha hai, bas print kar raha hai. Agar tum print na karte, to screen pe koi output nahi aata, aur tum void return type ke bina System.out.println() ke saath nahi likh pate.
 
  */
+public class nTo1 {
+    public static void main(String[] args) {
+        funcRev(5);     //not sout because we are not returning any value
+    }
+    static void funcRev(int n){//void because there is no return type
+        if (n == 0) {
+            return;
+        }
+
+        funcRev(n-1);
+        System.out.println(n);
+
+    }
+
+}
