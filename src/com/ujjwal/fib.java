@@ -2,7 +2,8 @@ package com.ujjwal;
 
 public class fib {
     public static void main(String[] args) {
-        System.out.println (  fib ( 8 ) );
+        int ans = fib(4);
+        System.out.println (  ans );
 
     }
     static int fib(int n) {
