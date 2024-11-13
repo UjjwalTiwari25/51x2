@@ -5,12 +5,3 @@ class findingNth_term {
         long segment = 1;
         long endPosition = 1;
 
-        while (endPosition < n) {
-            segment = segment + 1;
-            endPosition = endPosition + segment;
-        }
-
-        long startPosition = endPosition - segment + 1;
-        return n - startPosition + 1;
-    }
-}
