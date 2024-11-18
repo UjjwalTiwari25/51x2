@@ -2,7 +2,7 @@ package com.basicProblems;
 
 public class productOfDigits {
     public static void main(String[] args) {
-        int result =product ( 54321 );
+        int result =product ( 505);
         System.out.println (result);
     }
     static int product(int n){
