@@ -1,6 +1,6 @@
 package com.basicProblems;
 
-//public class nTo1 {
+public class nTo1 {
 //    public static void main(String[] args) {
 //        func(5);     //not sout because we are not returning any value
 //    }
@@ -27,18 +27,34 @@ Return Type void: void ka matlab hota hai "no return value." Jab tum static void
 In summary, func(5); function kuch bhi return nahi kar raha hai, bas print kar raha hai. Agar tum print na karte, to screen pe koi output nahi aata, aur tum void return type ke bina System.out.println() ke saath nahi likh pate.
 
  */
-public class nTo1 {
-    public static void main(String[] args) {
-        funcRev(5);     //not sout because we are not returning any value
-    }
-    static void funcRev(int n){//void because there is no return type
-        if (n == 0) {
-            return;
-        }
+//public class nTo1 {
+//    public static void main(String[] args) {
+//        funcRev(5);     //not sout because we are not returning any value
+//    }
+//    static void funcRev(int n){//void because there is no return type
+//        if (n == 0) {
+//            return;
+//        }
+//
+//        funcRev(n-1);
+//        System.out.println(n);
+//
+//    }
+//
+//}
 
-        funcRev(n-1);
-        System.out.println(n);
-
+public static void main(String[] args) {
+    funcBoth(5);     //not sout because we are not returning any value
+}
+static void funcBoth(int n){//void because there is no return type
+    if (n == 0) {
+        return;
     }
+    System.out.println (n);
+    funcBoth(n-1);
+    System.out.println(n);
+
+
+}
 
 }
