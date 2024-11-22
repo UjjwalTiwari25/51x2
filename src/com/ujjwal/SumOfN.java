@@ -10,6 +10,13 @@ public class SumOfN {
       int ans = Sum(4);
         System.out.println (  ans );
     }
+    /**
+     * Calculate the sum of the first n natural numbers.
+     * <p>
+     * Example: Sum(4) will return 10 (1 + 2 + 3 + 4).
+     * @param n the number of natural numbers to sum
+     * @return the sum of the first n natural numbers
+     */
     static int Sum(int n){
         if(n<2){
             return 1;
