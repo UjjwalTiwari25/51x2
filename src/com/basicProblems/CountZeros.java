@@ -2,11 +2,11 @@ package com.basicProblems;
 
 public class CountZeros {
     public static void main(String[] args) {
-        System.out.println (count ( 20304503 ));
+        System.out.println (count ());
 
     }
-    static int count(int n){
-        return helper(n,0);
+    static int count(){
+        return helper(20304503,0);
 
     }
 
