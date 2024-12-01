@@ -15,7 +15,12 @@ public class MergeSort {
         }
         int mid = arr.length / 2;
         int[] left = mergeSort(Arrays.copyOfRange(arr, 0, mid)); // copies the specified range of the specified array into a new array
-        int[] right = mergeSort(Arrays.copyOfRange(arr, mid, arr.length));
+        int[] right = mergeSort(Arrays.copyOfRange(arr, mid, arr.length));/*
+        The left array is correctly split as Arrays.copyOfRange(arr, 0, mid).
+        It includes elements from index 0 to mid - 1.
+        The right array is split as Arrays.copyOfRange(arr, mid, arr.length).
+        It includes elements from index mid to arr.length - 1.
+        */
         return merge(left, right);
     }
 
