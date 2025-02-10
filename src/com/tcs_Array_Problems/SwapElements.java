@@ -17,14 +17,12 @@ public class SwapElements {
         System.out.println("\nOriginal Array:");
         printArray(arr);
 
-        // Swapping first and last elements
-        swap(arr, 0, arr.length - 1);
+        // Swapping 2nd and 3rd elements
+        swap(arr, 1, 2);
 
         // Printing the modified array
         System.out.println("\nArray After Swapping First and Last Element:");
         printArray(arr);
-
-        sc.close();
     }
 
     // Method to swap two elements in the array
