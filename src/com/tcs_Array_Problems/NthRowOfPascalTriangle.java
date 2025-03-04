@@ -20,6 +20,6 @@ public class NthRowOfPascalTriangle {
         NthRowOfPascalTriangle sol = new NthRowOfPascalTriangle();
         int n = 5;
         ArrayList<Integer> result = sol.nthRow(n);
-        System.out.println(result);
+        System.out.println(result);    //print result
     }
 }
